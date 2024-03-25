@@ -1,0 +1,54 @@
+# Color chooser
+# arch blue 	#1793D1
+# debian red	#D70A53
+# manjaro green #2ECC71
+# matrix green	#00FF00
+# mint green	#5FAA24
+# ubuntu orange #F37320
+# vertex dark   #2C6FF0
+
+general {
+    colors = yes
+    interval = 5
+    color_good = "#2ECC71"
+    color_bad = "#E74C3C"
+}
+
+order += "cpu_usage"
+
+order += "disk /"
+order += "disk /home"
+
+order += "ethernet _first_"
+order += "volume master"
+order += "tztime local"
+
+cpu_usage {
+    format = "   %usage "
+}
+
+disk "/" {
+    format = "   %free "
+    prefix_type = "custom"
+}
+disk "/home" {
+    format = "   %free "
+    prefix_type = "custom"
+}
+
+ethernet _first_ {
+    format_up = "   %ip "
+    format_down = "   "
+}
+
+volume master {
+    format = "   %volume "
+    format_muted = "   "
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+tztime local {
+    format = "   %a %b%_e    %_H:%M "
+}
