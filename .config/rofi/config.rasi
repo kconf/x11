@@ -1,0 +1,8 @@
+configuration {
+  dpi: 192;
+  font: "monospace 14";
+  modes: [ combi ];
+  combi-modes: [ window, drun, ssh ];
+}
+
+@theme "gruvbox-light"
