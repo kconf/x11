@@ -196,6 +196,9 @@ bindsym $mod+Shift+b move container to workspace back_and_forth
 
 bindsym $mod+p exec "maim -s ~/Downloads/$(date +%s).png"
 bindsym $mod+Shift+p exec "maim -s | xclip -selection clipboard -t image/png"
+
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 #: }}}
 
 #: Startup applications {{{
