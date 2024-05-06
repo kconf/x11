@@ -201,6 +201,10 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 #: }}}
 
+#: Window settings {{{
+for_window [class="Thunar"] floating enable
+#: }}}
+
 #: Startup applications {{{
 exec_always fcitx5
 exec_always --no-startup-id i3wsr
