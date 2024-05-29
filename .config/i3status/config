@@ -43,15 +43,6 @@ battery 0 {
     status_full = " "
 }
 
-disk "/" {
-    format = "   %free "
-    prefix_type = "custom"
-}
-disk "/home" {
-    format = "   %free "
-    prefix_type = "custom"
-}
-
 ethernet _first_ {
     format_up = "   %ip "
     format_down = ""

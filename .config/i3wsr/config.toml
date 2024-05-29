@@ -1,11 +1,20 @@
+[aliases.class]
+"Microsoft-edge" = "Edge"
+"code-oss" = "Code"
+"Clash*" = "Clash"
+
 [icons]
-"Microsoft-edge" = ""
+Edge = ""
 Thunar = ""
-kitty = ""
+kitty = ""
 KeePassXC = ""
-obsidian = ""
-wps = "󱔘"
-code-oss = ""
+obsidian = "󰺿"
+wps = ""
+Code = ""
+Clash = "󰲀"
+Zotero = ""
+okular = ""
+Zeal = ""
 
 [general]
 default_icon = ""
