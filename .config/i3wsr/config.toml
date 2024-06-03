@@ -1,7 +1,12 @@
 [aliases.class]
 "Microsoft-edge" = "Edge"
 "code-oss" = "Code"
-"Clash*" = "Clash"
+"Clash.*" = "Clash"
+
+[aliases.name]
+".*Writer.*" = "Word"
+".*Spreadsheets.*" = "Excel"
+".*Presentation.*" = "Slides"
 
 [icons]
 Edge = ""
@@ -9,7 +14,9 @@ Thunar = ""
 kitty = ""
 KeePassXC = ""
 obsidian = "󰺿"
-wps = ""
+Word = ""
+Excel = ""
+Slides = ""
 Code = ""
 Clash = "󰲀"
 Zotero = ""
