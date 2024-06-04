@@ -2,6 +2,7 @@
 "Microsoft-edge" = "Edge"
 "code-oss" = "Code"
 "Clash.*" = "Clash"
+"com.alibabainc.dingtalk" = "DingTalk"
 
 [aliases.name]
 ".*Writer.*" = "Word"
@@ -22,6 +23,7 @@ Clash = "󰲀"
 Zotero = ""
 okular = ""
 Zeal = ""
+DingTalk = ""
 
 [general]
 default_icon = ""
