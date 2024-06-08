@@ -2,7 +2,9 @@
 "Microsoft-edge" = "Edge"
 "code-oss" = "Code"
 "Clash.*" = "Clash"
+"kitty" = "Kitty"
 "com.alibabainc.dingtalk" = "DingTalk"
+"org.wezfurlong.wezterm" = "Wezterm"
 
 [aliases.name]
 ".*Writer.*" = "Word"
@@ -12,7 +14,8 @@
 [icons]
 Edge = ""
 Thunar = ""
-kitty = ""
+Kitty = ""
+Wezterm = ""
 KeePassXC = ""
 obsidian = "󰺿"
 Word = ""

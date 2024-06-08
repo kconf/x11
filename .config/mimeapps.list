@@ -1,5 +1,7 @@
-
 [Default Applications]
 x-scheme-handler/clash=clash-verge.desktop
 application/pdf=org.kde.okular.desktop
 inode/directory=thunar.desktop
+
+[Added Associations]
+image/png=nsxiv.desktop;
