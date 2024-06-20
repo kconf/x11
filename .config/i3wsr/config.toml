@@ -5,6 +5,7 @@
 "kitty" = "Kitty"
 "com.alibabainc.dingtalk" = "DingTalk"
 "org.wezfurlong.wezterm" = "Wezterm"
+"dev.warp.Warp" = "Warp"
 
 [aliases.name]
 ".*Writer.*" = "Word"
@@ -16,6 +17,7 @@ Edge = ""
 Thunar = ""
 Kitty = ""
 Wezterm = ""
+Warp = ""
 KeePassXC = ""
 obsidian = "󰺿"
 Word = ""
