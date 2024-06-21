@@ -5,3 +5,4 @@ inode/directory=thunar.desktop
 
 [Added Associations]
 image/png=nsxiv.desktop;
+text/markdown=code.desktop;
