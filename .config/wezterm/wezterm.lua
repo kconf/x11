@@ -11,6 +11,11 @@ config.use_ime = true
 config.color_scheme = "AdventureTime"
 
 config.font_size = 14.0
+config.font = wezterm.font_with_fallback({
+	"JetBrains Mono",
+	"Source Han Sans CN",
+	"Noto Sans CJK SC",
+})
 
 -- SSH
 config.ssh_domains = {
