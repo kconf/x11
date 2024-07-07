@@ -1,8 +1,11 @@
 [Default Applications]
-x-scheme-handler/clash=clash-verge.desktop
 application/pdf=org.kde.okular.desktop
 inode/directory=thunar.desktop
-
-[Added Associations]
 image/png=nsxiv.desktop;
+text/html=microsoft-edge.desktop
 text/markdown=code.desktop;
+x-scheme-handler/clash=clash-verge.desktop
+x-scheme-handler/http=microsoft-edge.desktop
+x-scheme-handler/https=microsoft-edge.desktop
+x-scheme-handler/about=microsoft-edge.desktop
+x-scheme-handler/unknown=microsoft-edge.desktop
