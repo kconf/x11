@@ -11,6 +11,8 @@
 ".*Writer.*" = "Word"
 ".*Spreadsheets.*" = "Excel"
 ".*Presentation.*" = "Slides"
+"MATLAB.*" = "Matlab"
+"Wolfram.*" = "Mathematica"
 
 [icons]
 Edge = ""
@@ -29,6 +31,9 @@ Zotero = ""
 okular = ""
 Zeal = ""
 DingTalk = ""
+Matlab = ""
+Mathematica = ""
+wechat = ""
 
 [general]
 default_icon = ""
