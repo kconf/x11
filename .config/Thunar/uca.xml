@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1717329076720917-1</unique-id>
+	<command>wezterm start --cwd %f</command>
+	<description>Open wezterm here</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>folder-new</icon>
+	<name>Move into new folder</name>
+	<submenu></submenu>
+	<unique-id>1721467866099290-1</unique-id>
+	<command>NEW_FOLDER=$(/usr/bin/zenity --entry --title &apos;Move into new folder&apos; --text &apos;Please enter a name for the new folder&apos;) &amp;&amp; mkdir &quot;$NEW_FOLDER&quot; &amp;&amp; mv %F &quot;$NEW_FOLDER&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>document-open</icon>
+	<name>Unarchive</name>
+	<submenu></submenu>
+	<unique-id>1721476701084032-1</unique-id>
+	<command>unar %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.zip;*.rar;*.gz;*.tar;*.bz2</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>drive-multidisk</icon>
+	<name>Archive</name>
+	<submenu></submenu>
+	<unique-id>1721477630438101-1</unique-id>
+	<command>ARCHIVE=$(/usr/bin/zenity --entry --title &apos;Create archive&apos; --text &apos;Please enter a name for the archive&apos;) &amp;&amp; apack $ARCHIVE %N</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>
