@@ -6,6 +6,7 @@
 "com.alibabainc.dingtalk" = "DingTalk"
 "org.wezfurlong.wezterm" = "Wezterm"
 "dev.warp.Warp" = "Warp"
+"firefox*" = "Firefox"
 
 [aliases.name]
 ".*Writer.*" = "Word"
@@ -16,6 +17,7 @@
 
 [icons]
 Edge = ""
+Firefox = ""
 Thunar = ""
 Kitty = ""
 Wezterm = ""
