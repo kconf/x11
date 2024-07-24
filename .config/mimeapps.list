@@ -2,6 +2,7 @@
 application/pdf=org.kde.okular.desktop
 inode/directory=thunar.desktop
 image/png=nsxiv.desktop;
+image/jpeg=nsxiv.desktop;
 text/html=microsoft-edge.desktop
 text/markdown=code.desktop;
 x-scheme-handler/clash=clash-verge.desktop
