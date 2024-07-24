@@ -18,17 +18,7 @@ config.font = wezterm.font_with_fallback({
 })
 
 -- SSH
-config.ssh_domains = {
-	{
-		-- This name identifies the domain
-		name = "naja",
-		-- The hostname or address to connect to. Will be used to match settings
-		-- from your ssh config file
-		remote_address = "192.168.88.4",
-		-- The username to use on the remote host
-		username = "hjw",
-	},
-}
+-- Usage: wezterm connect SSHMUX:hostname
+config.ssh_domains = wezterm.default_ssh_domains()
 
--- and finally, return the configuration to wezterm
 return config
