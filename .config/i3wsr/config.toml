@@ -7,6 +7,7 @@
 "org.wezfurlong.wezterm" = "Wezterm"
 "dev.warp.Warp" = "Warp"
 "firefox*" = "Firefox"
+"dev.zed.Zed" = "Zed"
 
 [aliases.name]
 ".*Writer.*" = "Word"
@@ -28,6 +29,7 @@ Word = ""
 Excel = ""
 Slides = ""
 Code = ""
+Zed = ""
 Clash = "󰲀"
 Zotero = ""
 okular = ""
