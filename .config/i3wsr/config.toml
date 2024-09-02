@@ -8,6 +8,7 @@
 "dev.warp.Warp" = "Warp"
 "firefox*" = "Firefox"
 "dev.zed.Zed" = "Zed"
+"strawberry" = "Music"
 
 [aliases.name]
 ".*Writer.*" = "Word"
@@ -38,6 +39,7 @@ DingTalk = ""
 Matlab = ""
 Mathematica = ""
 wechat = ""
+Music = ""
 
 [general]
 default_icon = ""

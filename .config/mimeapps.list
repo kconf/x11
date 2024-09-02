@@ -13,3 +13,4 @@ x-scheme-handler/unknown=microsoft-edge.desktop
 
 [Added Associations]
 inode/directory=org.strawberrymusicplayer.strawberry.desktop;
+application/wps-office.docx=wps-office-wps.desktop;libreoffice-writer.desktop;
