@@ -36,7 +36,7 @@
 	<command>unar %f</command>
 	<description></description>
 	<range>*</range>
-	<patterns>*.zip;*.rar;*.gz;*.tar;*.bz2</patterns>
+	<patterns>*.zip;*.rar;*.gz;*.tar;*.bz2;*.7z</patterns>
 	<other-files/>
 </action>
 <action>
