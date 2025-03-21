@@ -13,6 +13,7 @@ config.colors = require("cyberdream")
 
 config.font_size = 14.0
 config.font = wezterm.font_with_fallback({
+	"Maple Mono SC NF",
 	"JetBrains Mono",
 	"Source Han Sans CN",
 	"Noto Sans CJK SC",
