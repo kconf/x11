@@ -12,7 +12,7 @@ config.color_scheme = "GruvboxDark"
 
 config.font_size = 14.0
 config.font = wezterm.font_with_fallback({
-	"Maple Mono SC NF",
+	"Maple Mono NF CN",
 	"JetBrains Mono",
 	"Source Han Sans CN",
 	"Noto Sans CJK SC",
