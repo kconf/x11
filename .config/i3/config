@@ -210,6 +210,7 @@ bindsym $mod+u exec --no-startup-id "env XDG_DATA_DIRS=/usr/share:/usr/local/sha
 
 #: Window settings {{{
 # for_window [class="Thunar"] floating enable
+for_window [class=".*"] border pixel 1
 #: }}}
 
 #: Startup applications {{{
