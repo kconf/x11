@@ -14,7 +14,6 @@ general {
     color_bad = "#E74C3C"
 }
 
-order += "cpu_usage"
 order += "battery 0"
 
 order += "disk /"
@@ -49,13 +48,13 @@ ethernet _first_ {
 }
 
 wireless _first_ {
-    format_up = "   %ip "
+    format_up = "   %essid "
     format_down = "   "
 }
 
 volume master {
-    format = "   %volume "
-    format_muted = "   "
+    format = "   %volume "
+    format_muted = "   "
     device = "default"
     mixer = "Master"
     mixer_idx = 0

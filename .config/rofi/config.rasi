@@ -1,8 +1,23 @@
 configuration {
   dpi: 192;
   font: "monospace 14";
-  modes: [ combi ];
-  combi-modes: [ window, drun, ssh ];
+  modes: [ combi, window ];
+  combi-modes: [ window, drun, ssh, run ];
+  show-icons: true;
+  window-format: "{w:3}{n}  {t:20}";
+  display-window: "";
+  display-drun:   "";
+  display-run:    "󰆍";
+  display-ssh:    "";
 }
 
 @theme "gruvbox-light"
+
+element-icon {
+  size: 0.8em;
+  padding: 0.2em;
+}
+
+element-text {
+  vertical-align: 0.5;
+}
