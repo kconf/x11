@@ -24,6 +24,7 @@
 
 [icons]
 Edge = ""
+Chromium = ""
 Firefox = ""
 Thunar = ""
 Kitty = ""
@@ -49,8 +50,8 @@ Mathematica = ""
 wechat = ""
 Music = ""
 Reader = ""
-"LM Studio" = "󱚦"
-CherryStudio = "󱚦"
+"LM Studio" = ""
+CherryStudio = ""
 
 [general]
 separator = "  "
