@@ -218,12 +218,13 @@ exec_always fcitx5
 # exec_always --no-startup-id /home/hjw/.local/bin/i3wsr
 exec_always --no-startup-id i3wsr
 exec_always --no-startup-id autorandr -c
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #: }}}
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-  status_command i3status
-  # status_command i3status-rs
-  font pango:monospace 14
-}
+# bar {
+#   status_command i3status
+#   # status_command i3status-rs
+#   font pango:monospace 14
+# }
