@@ -1,5 +1,6 @@
 [aliases.class]
 "Microsoft-edge" = "Edge"
+"zen-browser" = "Zen"
 "code-oss" = "Code"
 "Clash.*" = "Clash"
 "kitty" = "Kitty"
@@ -26,6 +27,7 @@
 Edge = ""
 Chromium = ""
 Firefox = ""
+Zen = ""
 Thunar = ""
 Kitty = ""
 Wezterm = ""

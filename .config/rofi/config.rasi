@@ -11,7 +11,7 @@ configuration {
   display-ssh:    "";
 }
 
-@theme "gruvbox-light"
+@theme "purple"
 
 element-icon {
   size: 0.8em;
