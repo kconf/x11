@@ -15,6 +15,7 @@
 "libreoffice-calc" = "Excel"
 "libreoffice-impress" = "Slides"
 "libreoffice-startcenter" = "Office"
+"jetbrains-studio" = "Android Studio"
 
 [aliases.name]
 ".*Writer.*" = "Word"
@@ -54,6 +55,7 @@ Music = ""
 Reader = ""
 "LM Studio" = ""
 CherryStudio = ""
+"Android Studio" = "󰀲"
 
 [general]
 separator = "  "
