@@ -61,3 +61,4 @@ text/csv=libreoffice-calc.desktop;libreoffice-writer.desktop;
 image/webp=gimp.desktop;
 application/x-shellscript=dev.zed.Zed.desktop;
 application/pdf=org.gnome.Papers.desktop;
+text/x-java=dev.zed.Zed.desktop;
