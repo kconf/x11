@@ -14,7 +14,7 @@
 </action>
 <action>
 	<icon>folder-new</icon>
-	<name>Move into new folder</name>
+	<name>Move to New Folder</name>
 	<submenu></submenu>
 	<unique-id>1721467866099290-1</unique-id>
 	<command>NEW_FOLDER=$(/usr/bin/zenity --entry --title &apos;Move into new folder&apos; --text &apos;Please enter a name for the new folder&apos;) &amp;&amp; mkdir &quot;$NEW_FOLDER&quot; &amp;&amp; mv %F &quot;$NEW_FOLDER&quot;</command>
@@ -45,22 +45,6 @@
 	<submenu></submenu>
 	<unique-id>1721477630438101-1</unique-id>
 	<command>ARCHIVE=$(/usr/bin/zenity --entry --title &apos;Create archive&apos; --text &apos;Please enter a name for the archive&apos;) &amp;&amp; apack $ARCHIVE %N</command>
-	<description></description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<directories/>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
-<action>
-	<icon>user-trash</icon>
-	<name>Trash</name>
-	<submenu></submenu>
-	<unique-id>1721529462015538-1</unique-id>
-	<command>trash %F</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
