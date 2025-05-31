@@ -37,7 +37,7 @@ application/wps-office.wpt=wps-office-wps.desktop
 x-scheme-handler/apifox=apifox.desktop
 
 [Added Associations]
-inode/directory=org.strawberrymusicplayer.strawberry.desktop;
+inode/directory=oculante.desktop;org.strawberrymusicplayer.strawberry.desktop;
 application/wps-office.docx=libreoffice-writer.desktop;wps-office-wps.desktop;
 text/html=firefox-developer-edition.desktop
 x-scheme-handler/http=firefox-developer-edition.desktop
