@@ -35,6 +35,7 @@ application/wps-office.wpss=wps-office-wps.desktop
 application/wps-office.wpso=wps-office-wps.desktop
 application/wps-office.wpt=wps-office-wps.desktop
 x-scheme-handler/apifox=apifox.desktop
+x-scheme-handler/anythingllm=anythingllm-desktop.desktop
 
 [Added Associations]
 inode/directory=oculante.desktop;org.strawberrymusicplayer.strawberry.desktop;
