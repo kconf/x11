@@ -62,6 +62,6 @@ image/jpeg=feh.desktop;imv.desktop;imv-dir.desktop;gimp.desktop;xnviewmp.desktop
 text/csv=libreoffice-calc.desktop;libreoffice-writer.desktop;
 image/webp=gimp.desktop;
 application/x-shellscript=dev.zed.Zed.desktop;
-application/pdf=sioyek.desktop;org.gnome.Papers.desktop;mupdf.desktop;
+application/pdf=okularApplication_pdf.desktop;sioyek.desktop;org.gnome.Papers.desktop;mupdf.desktop;
 text/x-java=dev.zed.Zed.desktop;
 application/wps-office.doc=libreoffice-writer.desktop;
