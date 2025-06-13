@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PACKAGES=(xdg-utils xorg-server xorg-xinit xorg-xrandr arandr xclip zenity thunar maim)
+PACKAGES=(xdg-utils xorg-server xorg-xinit xorg-xrandr arandr xclip zenity thunar maim dunst)
 
 if [[ $# -eq 0 || $1 = "install" ]]; then
     paru -S --needed --noconfirm ${PACKAGES[@]}
