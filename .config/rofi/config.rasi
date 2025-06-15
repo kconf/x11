@@ -1,7 +1,7 @@
 configuration {
   dpi: 192;
   font: "monospace 14";
-  modes: [ combi, window ];
+  modes: [ combi, window, calc ];
   combi-modes: [ window, drun, ssh, run ];
   show-icons: true;
   window-format: "{w:3}{n}  {t:20}";
