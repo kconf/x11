@@ -3,6 +3,7 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
+# See also: https://github.com/i3/i3/blob/next/parser-specs/commands.spec
 
 #: Variables {{{
 
@@ -37,7 +38,7 @@ bindsym $mod+Tab exec "rofi -show window"
 bindsym $mod+c exec "rofi -show calc"
 
 # Kill focused window
-bindsym $mod+q kill
+bindsym $mod+Shift+q kill
 
 #: }}}
 
@@ -86,13 +87,10 @@ tiling_drag modifier titlebar
 #: Splitting and Layouts {{{
 
 # Split in horizontal orientation
-# bindsym $mod+h split h
+bindsym $mod+Ctrl+h split h
 
 # Split in vertical orientation
-bindsym $mod+v split v
-
-# Toggle split orientation (horizontal/vertical)
-# bindsym $mod+e togglesplit
+bindsym $mod+Ctrl+v split v
 
 # Change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -237,18 +235,34 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # is used in the bar {} block below.
 font pango:monospace 12
 
-for_window [class=".*"] border pixel 5
+for_window [class=".*"] border pixel 2
+
+gaps inner 10
 
 # Colors
-#
-# class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+# --- Gruvbox Dark ---
+set $gruvbox-bg      #282828
+set $gruvbox-bg0_h   #1d2021
+set $gruvbox-bg1     #3c3836
+set $gruvbox-fg      #ebdbb2
+set $gruvbox-fg4     #a89984
+set $gruvbox-gray    #928374
+set $gruvbox-red     #cc241d
+set $gruvbox-green   #98971a
+set $gruvbox-yellow  #d79921
+set $gruvbox-blue    #458588
+set $gruvbox-purple  #b16286
+set $gruvbox-aqua    #689d6a
+set $gruvbox-orange  #d65d0e
 
-client.background       #ffffff
+# class                 <border>      <background>  <text>        <indicator>   <child_border>
+client.focused          $gruvbox-blue $gruvbox-blue   $gruvbox-bg   $gruvbox-purple $gruvbox-blue
+client.focused_inactive $gruvbox-bg1  $gruvbox-bg1    $gruvbox-fg4  $gruvbox-bg1    $gruvbox-bg1
+client.unfocused        $gruvbox-bg1  $gruvbox-bg0_h  $gruvbox-gray $gruvbox-bg1    $gruvbox-bg0_h
+client.urgent           $gruvbox-red  $gruvbox-red    $gruvbox-bg   $gruvbox-red    $gruvbox-red
+client.placeholder      $gruvbox-bg   $gruvbox-bg     $gruvbox-fg   $gruvbox-bg     $gruvbox-bg
+
+client.background       $gruvbox-bg
 
 #: }}}
 
