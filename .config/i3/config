@@ -19,6 +19,9 @@ set $right l
 # Your preferred terminal emulator
 set $term wezterm
 
+# Your perferred file manager
+set $filemanager thunar
+
 # Your preferred application launcher
 # rofi is a great choice: rofi -show drun
 set $menu rofi -show
@@ -29,6 +32,9 @@ set $menu rofi -show
 
 # Start a terminal
 bindsym $mod+Return exec $term
+
+# Start a file manager
+bindsym $mod+e exec $filemanager
 
 # Application launcher
 bindsym $mod+d exec $menu
@@ -87,29 +93,30 @@ tiling_drag modifier titlebar
 #: Splitting and Layouts {{{
 
 # Split in horizontal orientation
-bindsym $mod+Ctrl+h split h
+bindsym $mod+bracketleft split h
 
 # Split in vertical orientation
-bindsym $mod+Ctrl+v split v
+bindsym $mod+bracketright split v
+
+bindsym $mod+v split toggle
 
 # Change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+s layout toggle split
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+t layout tabbed
 
 # Enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-# bindsym $mod+f fullscreen
 
 #: }}}
 
 #: Floating Windows {{{
 
 # Toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+space floating toggle
 
 # Change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+space focus mode_toggle
 
 # Drag floating windows with mouse
 bindsym $mod+Button1 move
@@ -168,8 +175,8 @@ workspace_auto_back_and_forth yes
 bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth
 
-bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+minus move scratchpad
 
 #: }}}
 
@@ -178,16 +185,16 @@ bindsym $mod+minus scratchpad show
 # Press Escape or Return to exit the mode.
 set $resize_mode "Resize: [h/j/k/l] | [Esc] to exit"
 mode $resize_mode {
-    bindsym $left resize shrink width 10 px or 10 ppt
-    bindsym $down resize grow height 10 px or 10 ppt
-    bindsym $up resize shrink height 10 px or 10 ppt
-    bindsym $right resize grow width 10 px or 10 ppt
+    bindsym $left resize grow left 10 px or 10 ppt
+    bindsym $down resize grow down 10 px or 10 ppt
+    bindsym $up resize grow up 10 px or 10 ppt
+    bindsym $right resize grow right 10 px or 10 ppt
 
     # Same bindings, but for the arrow keys
-    bindsym Left resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Left resize grow left 10 px or 10 ppt
+    bindsym Down resize grow down 10 px or 10 ppt
+    bindsym Up resize grow up 10 px or 10 ppt
+    bindsym Right resize grow right 10 px or 10 ppt
 
     # Back to default mode
     bindsym Return mode "default"
