@@ -192,37 +192,6 @@ bindsym $mod+r mode $resize_mode
 
 #: }}}
 
-#: System {{{
-
-# Use pactl to adjust volume in PulseAudio.
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
-
-# Use brightnessctl to adjust monitor brightness.
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
-
-# Screenshot
-bindsym $mod+p exec "maim -s ~/Pictures/screenshots/$(date +%Y-%m-%d-%H%M%S).png"
-bindsym $mod+Shift+p exec "maim -s | xclip -selection clipboard -t image/png"
-
-#: }}}
-
-#: Configuration Reload {{{
-
-# In the i3 window manager, restarting i3 completely replaces the current instance with a new one, while reloading i3 only reloads the configuration file without restarting the entire instance. If you have exec-always directives in your configuration, they will only be executed when you restart i3, not when you reload.  
-
-# Reload the configuration file
-bindsym $mod+Shift+c reload
-# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-# Exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-#: }}}
-
 #: Appearance {{{
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -260,11 +229,6 @@ client.background       $gruvbox-bg
 
 #: }}}
 
-#: Startup applications {{{
-exec_always --no-startup-id dunst
-exec_always fcitx5 --replace -d
-#: }}}
-
 #: Bar settings {{{
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -282,4 +246,40 @@ exec_always --no-startup-id /home/hjw/.local/bin/i3wsr
 # Use polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+#: }}}
+
+#: Configuration {{{
+
+# In the i3 window manager, restarting i3 completely replaces the current instance with a new one, while reloading i3 only reloads the configuration file without restarting the entire instance. If you have exec-always directives in your configuration, they will only be executed when you restart i3, not when you reload.  
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# Exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+#: }}}
+
+#: System {{{
+
+# Use pactl to adjust volume in PulseAudio.
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# Use brightnessctl to adjust monitor brightness.
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+# Screenshot
+bindsym $mod+p exec "maim -s ~/Pictures/screenshots/$(date +%Y-%m-%d-%H%M%S).png"
+bindsym $mod+Shift+p exec "maim -s | xclip -selection clipboard -t image/png"
+
+#: }}}
+
+#: Startup applications {{{
+exec_always --no-startup-id dunst
+exec_always fcitx5 --replace -d
 #: }}}
