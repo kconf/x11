@@ -12,5 +12,5 @@ export INPUT_METHOD=fcitx
 export GLFW_IM_MODULE=ibus
 
 xrdb -merge $HOME/.Xresources
-exec i3
 
+exec dbus-launch --exit-with-session i3
