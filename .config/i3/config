@@ -227,6 +227,9 @@ client.placeholder      $gruvbox-bg   $gruvbox-bg     $gruvbox-fg   $gruvbox-bg 
 
 client.background       $gruvbox-bg
 
+# wallpaper
+exec_always --no-startup-id feh --bg-scale $HOME/Pictures/Wallpapers/i3.png
+
 #: }}}
 
 #: Bar settings {{{
