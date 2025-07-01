@@ -14,3 +14,4 @@ export GLFW_IM_MODULE=ibus
 xrdb -merge $HOME/.Xresources
 
 exec dbus-launch --exit-with-session i3
+# exec dbus-launch --exit-with-session dwm
