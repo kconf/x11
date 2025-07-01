@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# List of available window managers
+wms=("i3" "niri" "scroll" "hyprland" "river" "sway" "dwm")
+
+# Select WM using fzf
+chosen=$(printf "%s\n" "${wms[@]}" | fzf --prompt="Select WM: " --height 40% --reverse)
+
+# Exit if no selection
+[[ -z "$chosen" ]] && exit 1
+
+# Execute the chosen WM
+case "$chosen" in
+    i3) startx ;;
+    dwm) WM=dwm startx ;;
+    niri) niri --session ;;
+    scroll) scroll ;;
+    hyprland) Hyprland ;;
+    river) dbus-run-session river ;;
+    sway) sway ;;
+    *) echo "Unknown WM: $chosen"; exit 1 ;;
+esac
