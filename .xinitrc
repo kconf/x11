@@ -16,11 +16,12 @@ xrdb -merge $HOME/.Xresources
 
 case $WM in
   dwm)
+    eval $(dbus-launch --sh-syntax --exit-with-session)
     feh --bg-scale ~/Pictures/Wallpapers/dwm.jpg &
     dunst &
     fcitx5 --replace -d &
     slstatus &
-    exec dbus-launch --exit-with-session dwm
+    exec dwm
     ;;
   *)
     echo "Start default wm: i3"
