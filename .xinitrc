@@ -13,5 +13,12 @@ export GLFW_IM_MODULE=ibus
 
 xrdb -merge $HOME/.Xresources
 
-exec dbus-launch --exit-with-session i3
-# exec dbus-launch --exit-with-session dwm
+# exec dbus-launch --exit-with-session i3
+
+# dwm
+picom -b
+feh --bg-scale ~/Pictures/Wallpapers/dwm.jpg &
+dunst &
+fcitx5 --replace -d &
+slstatus &
+exec dbus-launch --exit-with-session dwm
