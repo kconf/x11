@@ -1,22 +1,51 @@
 #!/usr/bin/env bash
 
-# List of available window managers
+# 1. Define and Select
 wms=("i3" "niri" "scroll" "hyprland" "river" "sway" "dwm")
-
-# Select WM using fzf
 chosen=$(printf "%s\n" "${wms[@]}" | fzf --prompt="Select WM: " --height 40% --reverse)
 
-# Exit if no selection
-[[ -z "$chosen" ]] && exit 1
+# Exit if no selection is made
+if [[ -z "$chosen" ]]; then
+    echo "No selection made. Exiting."
+    exit 1
+fi
 
-# Execute the chosen WM
+# 2. Set common environment variables
+export XMODIFIERS=@im=fcitx
+export INPUT_METHOD=fcitx
+export SDL_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+
+# 3. Handle execution based on the chosen window manager
 case "$chosen" in
-    i3) startx ;;
-    dwm) WM=dwm startx ;;
-    niri) niri --session ;;
-    scroll) scroll ;;
-    hyprland) Hyprland ;;
-    river) dbus-run-session river ;;
-    sway) sway ;;
-    *) echo "Unknown WM: $chosen"; exit 1 ;;
+  i3 | dwm)
+    # --- X11 Execution Path ---
+    echo "Preparing X11 session for $chosen..."
+
+    # Execute startx, passing the chosen WM as an argument.
+    # This delegates the final launch command to your ~/.xinitrc script.
+    startx ~/.xinitrc "$chosen"
+    ;;
+
+  niri | scroll | hyprland | river | sway)
+    # --- Wayland Execution Path ---
+    echo "Preparing Wayland session for $chosen..."
+
+    # Prepare the specific command for Wayland compositors
+    exec_command="$chosen"
+    if [[ "$chosen" == "niri" ]]; then
+      exec_command="niri --session"
+    elif [[ "$chosen" == "hyprland" ]]; then
+      exec_command="Hyprland"
+    fi
+
+    # Execute the Wayland compositor within a D-Bus session
+    exec dbus-run-session $exec_command
+    ;;
+
+  *)
+    # Fallback for any unexpected value
+    echo "Error: Unknown or unsupported selection '$chosen'"
+    exit 1
+    ;;
 esac

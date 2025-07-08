@@ -1,0 +1,8 @@
+#!/bin/sh
+
+feh --bg-scale ~/Pictures/Wallpapers/dwm.jpg &
+dunst &
+fcitx5 --replace -d &
+slstatus &
+
+exec dwm
