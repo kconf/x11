@@ -202,30 +202,7 @@ for_window [class=".*"] border pixel 2
 
 gaps inner 10
 
-# Colors
-# --- Gruvbox Dark ---
-set $gruvbox-bg      #282828
-set $gruvbox-bg0_h   #1d2021
-set $gruvbox-bg1     #3c3836
-set $gruvbox-fg      #ebdbb2
-set $gruvbox-fg4     #a89984
-set $gruvbox-gray    #928374
-set $gruvbox-red     #cc241d
-set $gruvbox-green   #98971a
-set $gruvbox-yellow  #d79921
-set $gruvbox-blue    #458588
-set $gruvbox-purple  #b16286
-set $gruvbox-aqua    #689d6a
-set $gruvbox-orange  #d65d0e
-
-# class                 <border>      <background>  <text>        <indicator>   <child_border>
-client.focused          $gruvbox-blue $gruvbox-blue   $gruvbox-bg   $gruvbox-purple $gruvbox-blue
-client.focused_inactive $gruvbox-bg1  $gruvbox-bg1    $gruvbox-fg4  $gruvbox-bg1    $gruvbox-bg1
-client.unfocused        $gruvbox-bg1  $gruvbox-bg0_h  $gruvbox-gray $gruvbox-bg1    $gruvbox-bg0_h
-client.urgent           $gruvbox-red  $gruvbox-red    $gruvbox-bg   $gruvbox-red    $gruvbox-red
-client.placeholder      $gruvbox-bg   $gruvbox-bg     $gruvbox-fg   $gruvbox-bg     $gruvbox-bg
-
-client.background       $gruvbox-bg
+include ~/.config/i3/colors.conf
 
 # wallpaper
 exec_always --no-startup-id feh --bg-scale $HOME/Pictures/Wallpapers/i3.png
