@@ -31,6 +31,9 @@ case "$chosen" in
     # --- Wayland Execution Path ---
     echo "Preparing Wayland session for $chosen..."
 
+    # Fix xwayland rendering for Java
+    export _JAVA_AWT_WM_NONREPARENTING=1
+
     # Prepare the specific command for Wayland compositors
     exec_command="$chosen"
     if [[ "$chosen" == "niri" ]]; then
