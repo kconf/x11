@@ -39,7 +39,7 @@ case "$chosen" in
     if [[ "$chosen" == "niri" ]]; then
       exec_command="niri --session"
     elif [[ "$chosen" == "hyprland" ]]; then
-      exec_command="Hyprland"
+      exec_command="start-hyprland"
     fi
 
     # Execute the Wayland compositor within a D-Bus session
