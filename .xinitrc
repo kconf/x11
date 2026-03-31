@@ -8,13 +8,5 @@ export GLFW_IM_MODULE=ibus
 
 xrdb -merge $HOME/.Xresources
 
-# Use a case statement to check the first command-line argument ($1).
-# $1 is the word that you type after the "startx" command.
-case "$1" in
-  dwm)
-    exec dbus-run-session ~/.local/bin/startdwm
-    ;;
-  *)
-    exec dbus-run-session i3
-    ;;
-esac
+# use dbus-run-session to start i3, so that i3 can use dbus for notifications, file manager and other features
+exec dbus-run-session i3
