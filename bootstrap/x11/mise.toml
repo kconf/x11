@@ -1,0 +1,20 @@
+[bootstrap.packages]
+# X11 session and utilities
+"pacman:xdg-utils" = "latest"
+"pacman:xorg-server" = "latest"
+"pacman:xorg-xinit" = "latest"
+"pacman:xorg-xrandr" = "latest"
+"pacman:arandr" = "latest"
+"pacman:xclip" = "latest"
+"pacman:zenity" = "latest"
+"pacman:thunar" = "latest"
+"pacman:maim" = "latest"
+"pacman:dunst" = "latest"
+
+# i3 package group and desktop tools
+"pacman:i3-wm" = "latest"
+"pacman:i3blocks" = "latest"
+"pacman:i3lock" = "latest"
+"pacman:i3status" = "latest"
+"pacman:rofi" = "latest"
+"pacman:rofi-calc" = "latest"
